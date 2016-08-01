@@ -33,4 +33,4 @@ const server = http.createServer((req,res) => {
   https
     .get(`https://ru.hexlet.io/u${req.url}`, r => 
       r.pipe(new UserCount()).pipe(new Badge()).pipe(res))
-}).listen(8080);
+}).listen(80);
