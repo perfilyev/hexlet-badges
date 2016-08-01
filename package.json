@@ -1,0 +1,20 @@
+{
+  "name": "hexlet-badges",
+  "version": "0.0.1",
+  "description": "Hexlet badges",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perfilyev/hexlet-badges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perfilyev/hexlet-badges/issues"
+  },
+  "homepage": "https://github.com/perfilyev/hexlet-badges#readme"
+}
