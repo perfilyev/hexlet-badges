@@ -2,7 +2,7 @@
   "name": "hexlet-badges",
   "version": "0.0.1",
   "description": "Hexlet badges",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
     "start": "node ."
   },

@@ -20,7 +20,7 @@ class Badge extends Transform {
   _transform(chunk, encoding, callback) {
     console.log('Badge', chunk.toString())
       https
-        .get(`https://img.shields.io/badge/hexlet-${chunk.toString()}-green.svg`, res => 
+        .get(`https://img.shields.io/badge/hexlet-${chunk.toString()}-green.png`, res => 
           res
             .on('data', this.push.bind(this))
             .on('end', callback))
@@ -28,9 +28,9 @@ class Badge extends Transform {
 }
 
 const server = http.createServer((req,res) => {
-  res.setHeader('Content-Type', 'image/svg+xml');
+  res.setHeader('Content-Type', 'image/png');
   
   https
     .get(`https://ru.hexlet.io/u${req.url}`, r => 
       r.pipe(new UserCount()).pipe(new Badge()).pipe(res))
-}).listen(80);
+}).listen(process.env.port || 8080);
