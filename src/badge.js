@@ -6,7 +6,7 @@ class Badge extends Transform {
     super({objectMode: true})
   }
   
-  _transform({label = 'hexlet', count}, encoding, callback) {
+  _transform({label = 'hexlet.io', count}, encoding, callback) {
     https
       .get(`https://img.shields.io/badge/${label}-${count}-green.png`, res => 
         res

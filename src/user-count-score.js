@@ -2,7 +2,7 @@ const UserCount = require('./user-count');
 
 class UserCountScore extends UserCount {
   _transform(chunk, encoding, callback) {
-    super._transform(chunk, encoding, callback, {label: 'hexlet score', regExp: this.scoreRegExp});
+    super._transform(chunk, encoding, callback, {label: 'hexlet.io score', regExp: this.scoreRegExp});
   }
   
   get scoreRegExp() {
